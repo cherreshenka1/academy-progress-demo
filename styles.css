@@ -52,8 +52,12 @@ button {
 }
 
 .ios-bar {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
+  width: min(100vw, 430px);
+  margin: 0 auto;
   z-index: 30;
   height: 49px;
   display: flex;
@@ -174,8 +178,12 @@ button {
 }
 
 .address-row {
-  position: sticky;
-  top: 49px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: min(100vw, 430px);
+  margin: 0 auto;
   z-index: 28;
   height: 84px;
   display: grid;
@@ -210,8 +218,12 @@ button {
 }
 
 .topbar {
-  position: sticky;
-  top: 133px;
+  position: fixed;
+  top: 84px;
+  left: 0;
+  right: 0;
+  width: min(100vw, 430px);
+  margin: 0 auto;
   z-index: 27;
   height: 108px;
   display: flex;
@@ -344,7 +356,7 @@ button {
 }
 
 .content {
-  padding: 30px 17px 116px;
+  padding: 222px 17px 116px;
 }
 
 .crumbs {
@@ -374,10 +386,12 @@ button {
 }
 
 .title-row {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 12px;
+  padding-right: 122px;
 }
 
 h1,
@@ -396,14 +410,15 @@ h1 {
 }
 
 .title-row a {
-  flex: 0 0 92px;
+  position: absolute;
+  top: 2px;
+  right: 26px;
+  width: 112px;
   color: var(--red);
   font-size: 14px;
   font-weight: 700;
   line-height: 1.1;
   text-decoration: none;
-  margin-right: 18px;
-  margin-bottom: 18px;
   text-align: right;
   white-space: normal;
 }
