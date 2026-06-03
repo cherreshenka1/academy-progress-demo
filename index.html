@@ -10,43 +10,46 @@
     <main class="phone">
       <div class="fixed-header">
         <div class="address-row">
-        <span>student.local</span>
-        <button class="floating-doc" type="button" aria-label="Документы">
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M7 3h9l4 4v14H7z"></path>
-            <path d="M15 3v5h5"></path>
-            <path d="M9 13h8M9 17h8"></path>
-          </svg>
-        </button>
-      </div>
-
-      <header class="topbar">
-        <button class="icon-button menu-open" type="button" aria-label="Открыть меню">
-          <span></span><span></span><span></span>
-        </button>
-        <a>
-          <span class="crest" aria-hidden="true">
-            <svg viewBox="0 0 64 72">
-              <path class="wing left" d="M29 16C18 12 10 18 7 30c8-7 13-6 18-1-7 1-13 5-17 12 10-3 18-2 23 6z"></path>
-              <path class="wing right" d="M35 16c11-4 19 2 22 14-8-7-13-6-18-1 7 1 13 5 17 12-10-3-18-2-23 6z"></path>
-              <path class="shield" d="M20 19h24v20c0 10-7 16-12 19-5-3-12-9-12-19z"></path>
-              <path class="shield-line" d="M32 21v35M21 32h22"></path>
-              <path class="ribbon" d="M12 55c11 3 29 3 40 0l-4 8H16z"></path>
+          <span>student.local</span>
+          <button class="floating-doc" type="button" aria-label="Документы">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M7 3h9l4 4v14H7z"></path>
+              <path d="M15 3v5h5"></path>
+              <path d="M9 13h8M9 17h8"></path>
             </svg>
-          </span>
-          <span class="brand-text">
-            <small>Учебная</small>
-            <strong>Академия</strong>
-          </span>
-          <span class="header-demo-badge">Демо</span>
-        </a>
-        <button class="icon-button bell" type="button" aria-label="Уведомления">
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M18 9a6 6 0 0 0-12 0c0 7-3 6-3 9h18c0-3-3-2-3-9z"></path>
-            <path d="M9 20a3 3 0 0 0 6 0"></path>
-          </svg>
-        </button>
-        <button class="avatar" type="button" aria-label="Профиль"></button>
+          </button>
+        </div>
+
+        <header class="topbar">
+          <button class="icon-button menu-open" type="button" aria-label="Открыть меню">
+            <span></span><span></span><span></span>
+          </button>
+
+          <a class="brand" href="#home" aria-label="Демо академический портал">
+            <span class="crest" aria-hidden="true">
+              <svg viewBox="0 0 64 72">
+                <path class="wing left" d="M29 16C18 12 10 18 7 30c8-7 13-6 18-1-7 1-13 5-17 12 10-3 18-2 23 6z"></path>
+                <path class="wing right" d="M35 16c11-4 19 2 22 14-8-7-13-6-18-1 7 1 13 5 17 12-10-3-18-2-23 6z"></path>
+                <path class="shield" d="M20 19h24v20c0 10-7 16-12 19-5-3-12-9-12-19z"></path>
+                <path class="shield-line" d="M32 21v35M21 32h22"></path>
+                <path class="ribbon" d="M12 55c11 3 29 3 40 0l-4 8H16z"></path>
+              </svg>
+            </span>
+            <span class="brand-text">
+              <small>Учебная</small>
+              <strong>Академия</strong>
+            </span>
+            <span class="header-demo-badge">Демо</span>
+          </a>
+
+          <button class="icon-button bell" type="button" aria-label="Уведомления">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M18 9a6 6 0 0 0-12 0c0 7-3 6-3 9h18c0-3-3-2-3-9z"></path>
+              <path d="M9 20a3 3 0 0 0 6 0"></path>
+            </svg>
+          </button>
+
+          <button class="avatar" type="button" aria-label="Профиль"></button>
         </header>
       </div>
 
@@ -70,6 +73,7 @@
             </a>
             <button class="close-drawer" type="button" aria-label="Закрыть меню"></button>
           </div>
+
           <button class="group-select" type="button">
             <span>25-Г-110 (Чебоксарский филиал) 38.03.04 ГМУ</span>
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg>
@@ -81,20 +85,24 @@
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5V20H5z"></path></svg>
             Главная
           </a>
+
           <button class="nav-item muted" type="button">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4h10a2 2 0 0 1 2 2v16l-4-2-3 2-3-2-4 2V6a2 2 0 0 1 2-2z"></path><path d="M9 9h6M9 13h6"></path></svg>
             Документы
             <span class="chevron"></span>
           </button>
+
           <button class="nav-item expanded" type="button">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 8 9-4 9 4-9 4z"></path><path d="M6 10v5c2 3 10 3 12 0v-5"></path></svg>
             Учеба
             <span class="chevron up"></span>
           </button>
+
           <a class="nav-sub" href="#schedule">Расписание</a>
           <a class="nav-sub" href="#plan">Учебный план</a>
           <a class="nav-sub" href="#anti">Антиплагиат</a>
           <a class="nav-sub" href="#progress">Успеваемость</a>
+
           <button class="nav-item muted" type="button">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M3 12h18M5.5 5.5l13 13M18.5 5.5l-13 13"></path></svg>
             Сервисы Академии
