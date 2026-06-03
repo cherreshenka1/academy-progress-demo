@@ -21,12 +21,15 @@
 }
 
 html {
+  height: 100%;
   background: #e9e9ee;
+  overflow: hidden;
 }
 
 body {
   margin: 0;
-  min-height: 100vh;
+  height: 100%;
+  overflow: hidden;
   display: grid;
   place-items: start center;
   background: #e9e9ee;
@@ -45,8 +48,9 @@ button {
 .phone {
   position: relative;
   width: min(100vw, 430px);
-  min-height: 100vh;
-  overflow-x: hidden;
+  height: 100vh;
+  height: 100dvh;
+  overflow: hidden;
   background: var(--bg);
   box-shadow: 0 0 0 1px rgba(30, 28, 45, 0.08);
 }
@@ -271,7 +275,7 @@ button {
 }
 
 .crest {
-  width: 61px;
+  width: 57px;
   height: 69px;
   flex: 0 0 auto;
 }
@@ -317,9 +321,23 @@ button {
 }
 
 .brand-text strong {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 900;
   letter-spacing: 0;
+}
+
+.header-demo-badge {
+  align-self: center;
+  margin-left: 0;
+  padding: 3px 5px;
+  border: 1.5px solid var(--red);
+  border-radius: 999px;
+  color: var(--red);
+  background: #fff7f8;
+  font-size: 9px;
+  font-weight: 900;
+  line-height: 1;
+  text-transform: uppercase;
 }
 
 .bell {
@@ -356,7 +374,12 @@ button {
 }
 
 .content {
+  height: 100vh;
+  height: 100dvh;
+  overflow-y: auto;
+  overflow-x: hidden;
   padding: 222px 17px 116px;
+  -webkit-overflow-scrolling: touch;
 }
 
 .crumbs {
@@ -1021,11 +1044,16 @@ dd {
   }
 
   .brand-text strong {
-    font-size: 19px;
+    font-size: 18px;
   }
 
   .crest {
     width: 53px;
+  }
+
+  .header-demo-badge {
+    padding: 3px 6px;
+    font-size: 10px;
   }
 
   .tab span {
