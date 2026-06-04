@@ -274,7 +274,13 @@ button {
   min-width: 0;
 }
 
+.topbar .brand {
+  flex: 1 1 auto;
+  max-width: 214px;
+}
+
 .crest {
+  display: block;
   width: 57px;
   height: 69px;
   flex: 0 0 auto;
@@ -338,6 +344,12 @@ button {
   font-weight: 900;
   line-height: 1;
   text-transform: uppercase;
+}
+
+.address-row .header-demo-badge {
+  position: absolute;
+  left: 24px;
+  top: 28px;
 }
 
 .bell {
@@ -1041,6 +1053,11 @@ dd {
     padding-left: 22px;
     padding-right: 22px;
     gap: 12px;
+  }
+
+  .topbar .brand {
+    max-width: 190px;
+    gap: 7px;
   }
 
   .brand-text strong {
