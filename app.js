@@ -101,7 +101,7 @@ const disciplines = [
   {
     name: "Теория и практика управления",
     type: "Экзамен",
-    workload: 0,
+    workload: 144,
     semester: 1,
     grade: "Отлично",
     gradeType: "excellent",
@@ -137,7 +137,7 @@ const disciplines = [
   {
     name: "Логические основы управленческого мышления",
     type: "Зачет",
-    workload: 72,
+    workload: 84,
     semester: 2,
     grade: "Зачтено",
     gradeType: "passed",
